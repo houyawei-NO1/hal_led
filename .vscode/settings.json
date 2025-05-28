@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "atomic": "c",
+        "compare": "c",
+        "cstddef": "c",
+        "limits": "c",
+        "memory": "c",
+        "type_traits": "c",
+        "xmemory": "c",
+        "xstring": "c",
+        "xutility": "c",
+        "stdint.h": "c",
+        "stm32f4xx_hal.h": "c",
+        "tle926x_defines.h": "c",
+        "main.h": "c",
+        "stm32f4xx_hal_conf.h": "c"
+    },
+    "idf.espIdfPathWin": "d:\\esp\\v5.3.2\\esp-idf",
+    "idf.toolsPathWin": "d:\\esp\\.espressif",
+    "idf.pythonInstallPath": "d:\\esp\\.espressif\\tools\\idf-python\\3.11.2\\python.exe",
+    "idf.flashType": "UART"
+}

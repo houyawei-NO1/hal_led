@@ -1,0 +1,29 @@
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'hal_led'
+compiling TLE926x.c...
+..\Core\Src\TLE926x.c(47): warning:  #9-D: nested comment is not allowed
+  /* ================================================================================ */
+..\Core\Src\TLE926x.c(159): warning:  #550-D: variable "sbc_product"  was set but never used
+      uint8_t sbc_product;
+..\Core\Src\TLE926x.c(165): warning:  #550-D: variable "SWK_ID3_CTRL"  was set but never used
+      uint8_t SWK_ID3_CTRL, SWK_ID2_CTRL, SWK_ID1_CTRL, SWK_ID0_CTRL;
+..\Core\Src\TLE926x.c(165): warning:  #550-D: variable "SWK_ID2_CTRL"  was set but never used
+      uint8_t SWK_ID3_CTRL, SWK_ID2_CTRL, SWK_ID1_CTRL, SWK_ID0_CTRL;
+..\Core\Src\TLE926x.c(165): warning:  #550-D: variable "SWK_ID1_CTRL"  was set but never used
+      uint8_t SWK_ID3_CTRL, SWK_ID2_CTRL, SWK_ID1_CTRL, SWK_ID0_CTRL;
+..\Core\Src\TLE926x.c(165): warning:  #550-D: variable "SWK_ID0_CTRL"  was set but never used
+      uint8_t SWK_ID3_CTRL, SWK_ID2_CTRL, SWK_ID1_CTRL, SWK_ID0_CTRL;
+..\Core\Src\TLE926x.c(166): warning:  #550-D: variable "SWK_MASK_ID3_CTRL"  was set but never used
+      uint8_t SWK_MASK_ID3_CTRL, SWK_MASK_ID2_CTRL, SWK_MASK_ID1_CTRL, SWK_MASK_ID0_CTRL;
+..\Core\Src\TLE926x.c(166): warning:  #550-D: variable "SWK_MASK_ID2_CTRL"  was set but never used
+      uint8_t SWK_MASK_ID3_CTRL, SWK_MASK_ID2_CTRL, SWK_MASK_ID1_CTRL, SWK_MASK_ID0_CTRL;
+..\Core\Src\TLE926x.c(166): warning:  #550-D: variable "SWK_MASK_ID1_CTRL"  was set but never used
+      uint8_t SWK_MASK_ID3_CTRL, SWK_MASK_ID2_CTRL, SWK_MASK_ID1_CTRL, SWK_MASK_ID0_CTRL;
+..\Core\Src\TLE926x.c(166): warning:  #550-D: variable "SWK_MASK_ID0_CTRL"  was set but never used
+      uint8_t SWK_MASK_ID3_CTRL, SWK_MASK_ID2_CTRL, SWK_MASK_ID1_CTRL, SWK_MASK_ID0_CTRL;
+..\Core\Src\TLE926x.c: 10 warnings, 0 errors
+linking...
+Program Size: Code=6512 RO-data=536 RW-data=28 ZI-data=1724  
+FromELF: creating hex file...
+"hal_led\hal_led.axf" - 0 Error(s), 10 Warning(s).
+Build Time Elapsed:  00:00:02
