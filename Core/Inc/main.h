@@ -57,6 +57,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define POWER_EN0_Pin GPIO_PIN_5
+#define POWER_EN0_GPIO_Port GPIOE
+#define POWER_EN1_Pin GPIO_PIN_6
+#define POWER_EN1_GPIO_Port GPIOE
 #define tle9263ro_Pin GPIO_PIN_0
 #define tle9263ro_GPIO_Port GPIOE
 

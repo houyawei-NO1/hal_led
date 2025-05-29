@@ -22,6 +22,7 @@
 #include "gpio.h"
 #include"TLE926x.h"
 #include <stdbool.h>
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -103,17 +104,20 @@ int main(void)
     HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);//LED off
   } else {
     HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);//LED on
+	HAL_Delay(2000);
   }
 
   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_12, GPIO_PIN_SET);//GPIO_PIN_RESET  low
   sbc_configure_watchdog(TIME_OUT_WD, WD_STARTS_AFTER_CAN_LIN_WAKE, WD_200MS);
   HAL_GPIO_WritePin(GPIOD, GPIO_PIN_11, GPIO_PIN_SET);//jidianqi
+  HAL_GPIO_WritePin(GPIOE, POWER_EN0_Pin,GPIO_PIN_SET );//jidianqi
+  HAL_GPIO_WritePin(GPIOE, POWER_EN1_Pin,GPIO_PIN_SET );//jidianqi
   while (1)
   {
-	// HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);//led
-	// HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_11);//jidianqi
+  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);//led
+  HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_11);//jidianqi
   sbc_wd_trigger();
-  HAL_Delay(100);
+  HAL_Delay(1000);
 
    /* Handle SBC_ISR() if INTN was toggeled */
 //  if (irqSBC) {
